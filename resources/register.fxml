@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="510.0" prefWidth="491.0" style="-fx-background-color: green; -fx-border-color: black; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projecttest.projecttest.RegisterController">
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+    <Label style="-fx-font-size: 24px;" text="Register" />
+    <TextField fx:id="usernameField" promptText="Username" style="-fx-border-color: black; -fx-border-width: 3;" />
+    <TextField fx:id="emailField" promptText="Email" style="-fx-border-color: black; -fx-border-width: 3;" />
+    <PasswordField fx:id="passwordField" promptText="Password" style="-fx-background-color: black; -fx-border-color: black; -fx-border-width: 3;" />
+    <Button onAction="#handleRegister" style="-fx-border-color: black; -fx-border-width: 3;" text="Register" />
+    <Label fx:id="statusLabel" />
+</VBox>
+</StackPane>

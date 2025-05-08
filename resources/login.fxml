@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane prefHeight="478.0" prefWidth="527.0" style="-fx-background-color: green; -fx-border-color: black; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projecttest.projecttest.LoginController">
+   <VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+   <padding>
+      <Insets bottom="20" left="20" right="20" top="20" />
+   </padding>
+   <Label style="-fx-font-size: 24px;" text="Teaching Zone!" />
+   <TextField fx:id="usernameField" promptText="Username" style="-fx-border-color: black; -fx-border-width: 3;" />
+   <PasswordField fx:id="passwordField" promptText="Password" style="-fx-background-color: black; -fx-border-width: 3;" />
+   <Button onAction="#handleLogin" style="-fx-border-width: 3; -fx-border-color: black;" text="Login">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+   <Button onAction="#handleGoToRegister" style="-fx-border-color: lime; -fx-border-width: 3;" text="Go to Register" underline="true" />
+   <Label fx:id="statusLabel" />
+   </VBox>
+</StackPane>
